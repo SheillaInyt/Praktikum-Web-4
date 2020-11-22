@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+    <script>
+        function send() {
+        let isipesan = document.getElementById("pesan").value;
+        document.getElementById("isi").innerHTML += isipesan + "<br/>";
+        document.getElementById("pesan").value = "";
+        return false;
+        }
+    </script>
+</head>
+<body>
+    <div id="isi"></div>
+    <form class="form" method="request" onsubmit="return send();">
+        <table>
+            <tr>
+                 <td><input id="pesan" style="width: 100%" type="text" name="pesan"><td>
+                 <td>button type=</td>
+                 </td>
+            </tr>
+        </table>
+
+    </form>
+</body>
